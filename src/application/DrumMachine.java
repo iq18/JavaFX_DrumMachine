@@ -59,40 +59,30 @@ public class DrumMachine extends Application {
 
 				switch (a.getCode()) {
 				case A:
-					System.out.println("Pressed A");
 					A.setEffect(ds);
-					try {
-						Thread.sleep(500);
-					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					musicFile = "src/audio/tom.mp3";
+					musicFile = "src/audio/tom.wav";
 					buttonTransition(A);
-					A.setEffect(null);
+					//A.setEffect(null);
 					break;
 				case S:
-					System.out.println("Pressed S");
 					S.setEffect(ds);
-					musicFile = "src/audio/clap.mp3";
+					musicFile = "src/audio/clap.wav";
 					buttonTransition(S);
 					break;
 				case D:
-					System.out.println("Pressed D");
-					musicFile = "src/audio/hihat.mp3";
+					musicFile = "src/audio/hihat.wav";
 					buttonTransition(D);
 					break;
 				case F:
-					System.out.println("Pressed F");
-					musicFile = "src/audio/kick.mp3";
+					musicFile = "src/audio/kick.wav";
 					buttonTransition(F);
 					break;
 				case G:
-					System.out.println("Pressed G");
-					musicFile = "src/audio/openhat.mp3";
+					musicFile = "src/audio/openhat.wav";
 					buttonTransition(G);
 					break;
 				default:
+					//TODO add Alert
 					System.out.println("Different key");
 				}
 
